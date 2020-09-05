@@ -1,0 +1,13 @@
+.text-center{
+    text-align: center;
+}
+body{
+    background: #eeeeee;
+}
+.text-center h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.17;
+    color: #333;
+    margin-bottom: 30px;
+}

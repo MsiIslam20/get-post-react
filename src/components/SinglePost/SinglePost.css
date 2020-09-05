@@ -1,0 +1,28 @@
+.mx-auto{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background: white;
+    padding: 20px 80px;
+    border-radius: 10px;
+    margin-bottom: 20px !important;
+}
+.mx-auto h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #060225;
+    margin-top: 10px;
+}
+.mx-auto h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    color: #060225;
+}
+.mx-auto p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.btn{
+    margin-bottom: 20px !important;
+}

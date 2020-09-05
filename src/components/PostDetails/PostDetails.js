@@ -36,7 +36,7 @@ const PostDetails = () => {
                     <h2>{title}</h2>
                     <p>{body}</p>
                     <div style={{borderTop: '1.5px solid #ccc', paddingTop: '20px', marginTop: '40px'}}>
-                        <p>All comments below:</p>
+                        <h3>All comments below:</h3>
                         {
                             comments.map(singleComment => <Comments key={singleComment.id} comments={singleComment}></Comments>)
                         }

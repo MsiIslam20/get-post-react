@@ -32,13 +32,15 @@ const PostDetails = () => {
             <Header />
             <Grid style={{marginTop: '100px'}} container>
                 <Grid className="mx-auto" item xs={11}>
-                    <h5>Blog Post {id}</h5>
+                    <h5>Blog Post {id} Details</h5>
                     <h2>{title}</h2>
                     <p>{body}</p>
-                    <p>All comments below:</p>
-                    {
-                        comments.map(singleComment => <Comments key={singleComment.id} comments={singleComment}></Comments>)
-                    }
+                    <div style={{borderTop: '1.5px solid #ccc', paddingTop: '20px', marginTop: '40px'}}>
+                        <p>All comments below:</p>
+                        {
+                            comments.map(singleComment => <Comments key={singleComment.id} comments={singleComment}></Comments>)
+                        }
+                    </div>
                 </Grid>
             </Grid>              
         </div>      

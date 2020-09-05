@@ -6,7 +6,6 @@ const SinglePost = (props) => {
 
     const {title , body, id} = props.post;
 
-    
     return (
         <Grid container>
             <Grid className="mx-auto" item xs={11}>

@@ -28,9 +28,6 @@ function App() {
         </Route>
       </Switch>
     </Router>    
-    // <div>
-    //   <Home />
-    // </div>
   );
 }
 

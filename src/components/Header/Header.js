@@ -10,8 +10,8 @@ const Header = () => {
                 <img src={logo} alt=""/>
                 <div className="menu">
                     <ul>
-                        <li>Home</li>
                         <li>About</li>
+                        <li>Post</li>
                         <li>Contact</li>
                     </ul>
                 </div>

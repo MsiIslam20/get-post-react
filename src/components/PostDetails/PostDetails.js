@@ -3,10 +3,12 @@ import { useParams } from 'react-router-dom';
 import { Grid, Button } from '@material-ui/core';
 import Header from '../Header/Header';
 import Comments from '../Comments/Comments';
+import './PostDetails.css'
 
 const PostDetails = () => {
-    const {postId} = useParams();
 
+    const {postId} = useParams();
+    //Get Posts
     const [posts ,  setPosts] = useState([]);
     
     useEffect(() => {
@@ -16,6 +18,10 @@ const PostDetails = () => {
         .then(data => setPosts(data));
     }, []);
 
+    const {title , body , id} = posts;
+    
+
+    // get Comments 
     const [comments ,  setComments] = useState([]);
     
     useEffect(() => {
@@ -25,8 +31,6 @@ const PostDetails = () => {
         .then(data => setComments(data));
     }, []);
 
-    const {title , body , id} = posts;
-
     return (
         <div>
             <Header />
@@ -35,8 +39,26 @@ const PostDetails = () => {
                     <h5>Blog Post {id} Details</h5>
                     <h2>{title}</h2>
                     <p>{body}</p>
+                    <div className="tags-area">
+                        <div>
+                            <ul>
+                                <li>Tags:</li>
+                                <li>#tutorial</li>
+                                <li>#technology</li>
+                                <li>#Blog</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Share:</li>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Linkdin</li>
+                            </ul>
+                        </div>                        
+                    </div>
                     <div style={{borderTop: '1.5px solid #ccc', paddingTop: '20px', marginTop: '40px'}}>
-                        <h3>All comments below:</h3>
+                        <h3>All comments({comments.length}) below:</h3>
                         {
                             comments.map(singleComment => <Comments key={singleComment.id} comments={singleComment}></Comments>)
                         }

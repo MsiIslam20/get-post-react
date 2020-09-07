@@ -1,0 +1,24 @@
+.tags-area{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1.5px solid #ccc;
+    padding-top: 40px;
+}
+.tags-area ul{
+    margin: 0;
+    padding: 0;
+}
+.tags-area ul li{
+    display: inline-block;
+    background: #e2e8f0;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: dimgrey;
+    cursor: pointer;
+}
+.tags-area ul li:first-child{
+    background: transparent;
+    margin-right: 18px;
+}

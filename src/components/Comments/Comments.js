@@ -8,11 +8,9 @@ const Comments = (props) => {
 
     //generate random number for image
     if(id > 100){
-
         const lastDigit = id % 10 ;
         id = Math.round((id / 10) + lastDigit) ;
-       
-      }
+    }
 
     return (
         <Grid container>

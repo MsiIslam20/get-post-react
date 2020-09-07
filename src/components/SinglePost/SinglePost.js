@@ -18,7 +18,7 @@ const SinglePost = (props) => {
                 <h5>Blog Post {id}</h5>
                 <h2>{title}</h2>
                 <p>{body}</p>
-                <Button onClick={() => handleClick(id)} className="btn" size="medium" variant="contained" color="primary">See More</Button>
+                <Button onClick={() => handleClick(id)} className="btn" size="medium" variant="contained" color="primary">Explore More</Button>
             </Grid>
         </Grid>
     );

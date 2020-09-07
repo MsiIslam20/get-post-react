@@ -53,7 +53,7 @@ const PostDetails = () => {
                                 <li>Share:</li>
                                 <li>Facebook</li>
                                 <li>Twitter</li>
-                                <li>Linkdin</li>
+                                <li>Instagram</li>
                             </ul>
                         </div>                        
                     </div>

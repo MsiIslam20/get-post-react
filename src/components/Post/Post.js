@@ -6,6 +6,7 @@ import './Post.css'
 const Post = () => {
     const [posts , setPosts] = useState([]);
 
+    //Get All Post From API
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
         .then(res => res.json())
